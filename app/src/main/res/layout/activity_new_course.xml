@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_course"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="iclass.rajat_pc.example.com.modereg.NewCourse">
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/new_course_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/courseName"
+                android:hint="Enter Course Name"
+                android:layout_margin="10dp"
+                android:inputType="textVisiblePassword|textNoSuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Department Name"
+                android:layout_margin="10dp"
+                android:maxLines="1" />
+
+        </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Description" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:text="submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/course_submit"
+                android:background="@drawable/rounded_bt_buttons"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

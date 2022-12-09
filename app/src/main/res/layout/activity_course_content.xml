@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_course_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="iclass.rajat_pc.example.com.modereg.CourseContent">
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/new_course_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/subject"
+                    android:hint="Subject"
+                    android:layout_margin="10dp"
+                    android:inputType="textVisiblePassword|textNoSuggestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Message"
+                    android:layout_margin="10dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chooseButton"
+                android:text="Choose File"
+                android:background="@drawable/rounded_bt_buttons"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="50dp"
+                android:textColor="#FFFFFF"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/uploadButton"
+                android:background="@drawable/rounded_bt_buttons"
+                android:text="Post Message"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textSize="15sp"
+                android:textColor="#ff3399"/>
+
+         </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
