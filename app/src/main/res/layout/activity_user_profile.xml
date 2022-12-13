@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="iclass.rajat_pc.example.com.modereg.UserProfile">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/user_profile_image"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_faculty_user" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Name"
+        android:textSize="15sp"
+        android:text="Name"
+        android:padding="10dp"
+        android:textColor="#009688"
+        android:layout_below="@+id/user_profile_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/user_profile_image"
+        android:text="Hello"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/Name"
+        android:layout_toEndOf="@+id/Name" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Email"
+        android:textSize="15sp"
+        android:text="Email"
+        android:padding="10dp"
+        android:textColor="#009688"
+        android:layout_below="@+id/Name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/useremail"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/username"
+        android:text="Hello"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/Email"
+        android:layout_toEndOf="@+id/Email" />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/current_password"
+    android:textSize="15sp"
+    android:text="Old Pswd"
+    android:padding="10dp"
+    android:textColor="#009688"
+    android:layout_below="@+id/Email"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userpassword"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/useremail"
+        android:text="Hello"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/current_password"
+        android:layout_toEndOf="@+id/Email" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/update_button"
+        android:text="Update Profile"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_bt_buttons"
+        android:layout_below="@+id/current_password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/logout_button"
+        android:text="Logout"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_bt_buttons"
+        android:layout_below="@+id/update_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>
